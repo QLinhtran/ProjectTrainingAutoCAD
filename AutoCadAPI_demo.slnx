@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="AutoCadAPI_demo.csproj" Id="af83ab3e-cf24-49b9-a56e-1e97eba0b904">
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+</Solution>

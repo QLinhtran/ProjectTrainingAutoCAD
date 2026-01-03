@@ -1,0 +1,17 @@
+﻿# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# Rider / VS cache
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
