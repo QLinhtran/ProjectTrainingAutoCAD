@@ -7,17 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoCadAPI_demo.ViewModel
+namespace AutoCadAPI_demo.TextWindowSetup.Commands
 {
-    public class MainVM
+    internal class LoadView
     {
-        [CommandMethod("HOTELBOOK")]
+        [CommandMethod("LOADVIEW")]
         public void OpenHotelUI()
         {
             Document doc = Application.DocumentManager.MdiActiveDocument;
             Editor ed = doc.Editor;
 
-            ed.WriteMessage("\nHotel booking command started.");
+            ed.WriteMessage("\nCommand is ready");
         }
     }
 }

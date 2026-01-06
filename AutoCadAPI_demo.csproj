@@ -107,7 +107,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HotelRoomManager\View\MainWindow.xaml.cs">
+    <Compile Include="TextWindowSetup\Commands\LoadView.cs" />
+    <Compile Include="TextWindowSetup\Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -123,7 +124,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="HotelRoomManager\ViewModel\MainVM.cs" />
+    <Compile Include="TextWindowSetup\ViewModels\MainVM.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -138,14 +139,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HotelRoomManager\Commands\" />
-    <Folder Include="HotelRoomManager\Model\" />
+    <Folder Include="TextWindowSetup\Actions\" />
+    <Folder Include="TextWindowSetup\Model\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="HotelRoomManager\View\MainWindow.xaml">
+    <Page Include="TextWindowSetup\Views\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
